@@ -1,0 +1,29 @@
+-- setup_quack.txt
+--
+--
+-- On the server:
+--
+duckdb H:\bfl\photo_analysis.duckdb
+D> install quack;
+D> load quack;
+D> SELECT * FROM quack_serve(
+    'quack:0.0.0.0:9494',
+    allow_other_hostname := true,   -- required to bind 0.0.0.0
+    disable_ssl := true,            -- plain HTTP, no certificates
+    token := 'super_secret');       -- min 4 chars; keep identical on both nodes
+D>
+
+--
+-- On the client - note: no SSL when no parameter given
+--
+--
+python analyze_photos_quack.py --quack quack:localhost:9494
+-- 
+DuckDB 
+D1> install quack;
+D1> load quack;
+D1> ATTACH ('quack:localhost', 
+    disable_ssl = 'True',
+    token = 'super_secret') AS remote; 
+
+D1>

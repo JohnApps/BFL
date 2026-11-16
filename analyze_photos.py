@@ -52,7 +52,7 @@ KEYWORDS = [
     "church", "castle", "bridge", "ruins", "monument", "interior", "museum",
     "portrait", "person", "group of people", "child", "family", "wedding",
     "party", "concert", "sports", "hiking", "cycling", "skiing", "swimming",
-    "dog", "cat", "bird", "horse", "insect", "butterfly", "wildlife", "fish",
+    "dog", "cat", "bird", "horse", "insect", "butterfly", "wildlife", "fish", "abstract",
     "food", "drink", "car", "train", "airplane", "boat", "bicycle",
     "macro close-up", "panorama", "black and white", "silhouette",
     "reflection", "fireworks", "lights at night", "market", "harbor",
