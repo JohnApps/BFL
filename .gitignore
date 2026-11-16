@@ -3,7 +3,7 @@ __pycache__/
 *.py[codz]
 *$py.class
 *.bat
-.cmd
+*.cmd
 .env
 #genai/
 
